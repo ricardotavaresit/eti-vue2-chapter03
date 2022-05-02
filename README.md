@@ -2,6 +2,7 @@
 
 Chapter 03 - Events Vue JS
 - Class 01: Events in Vue JS
+- Class 02: Events with parameters in Vue JS
  
 ## Technologies used             
 - VueJS;
