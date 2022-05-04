@@ -9,7 +9,8 @@
 </head>
 <body>
     <div id="app">
-        <input typer="text" @keyup="changeInput">
+        <input typer="text" @keyup="changeInput(2)">
+        <button @click="changeInput(3)">Increment</button>
        <p> {{ count }}</p>
     </div>
 </body>
@@ -22,8 +23,8 @@
             count: 0
         }, 
         methods:{
-            changeInput(){
-                this.count++;
+            changeInput(value){
+                this.count += value;
             }
         }
             
