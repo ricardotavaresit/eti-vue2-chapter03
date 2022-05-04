@@ -9,15 +9,13 @@
 </head>
 <body>
     <div id="app">
-        <input typer="text" v-on:click="count++">
-        <button @click="count++">+</button>
-        <button v-on:click="count--">-</button>
+        <input typer="text" v-on:keyup="count++">
+ 
 
        <p> {{ count }}</p>
     </div>
 </body>
 </html>
-
 
 <script>
     new Vue({
@@ -25,6 +23,5 @@
         data: {
             count: 0
         }
-
     });
 </script>
