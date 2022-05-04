@@ -9,9 +9,7 @@
 </head>
 <body>
     <div id="app">
-        <input typer="text" @keyup="count++">
- 
-
+        <input typer="text" @keyup="changeInput">
        <p> {{ count }}</p>
     </div>
 </body>
@@ -22,6 +20,12 @@
         el: "#app", 
         data: {
             count: 0
+        }, 
+        methods:{
+            changeInput(){
+                this.count++;
+            }
         }
+            
     });
 </script>
