@@ -9,7 +9,14 @@
 </head>
 <body>
     <div id="app">
- 
+        <input 
+            type="text" 
+            @keyup.down="changeValue"   
+            @keyup.up="changeValueTwo"
+            @keyup="getCodeKey"
+        >
+
+        {{valueText }}
     </div>
 </body>
 </html>
@@ -18,14 +25,22 @@
     new Vue({
         el: "#app", 
         data: {
-          
+            valueText: ""
         }, 
+        methods:{
             changeValue( event ){
                 this.valueText = event.target.value; 
             }, 
             changeValueTwo( event ){
                 alert(`changeValueTwo are called. Input have: ${this.valueText}`);
+            },
+            blurText( event ){
+                console.log(event)
+            }, 
+            getCodeKey( event ){
+                console.log(event.keyCode)
             }
+        }
        
             
     });
