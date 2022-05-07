@@ -10,6 +10,11 @@
 <body>
     <div id="app">
         <a v-bind:href="urlLink" @click.prevent="sayHello">{{textLink}}</a>
+
+        <form action="#" method="post" @submit.prevent="sayHello">
+            <input type="text" placeholder="Nome">
+            <button class="submit"> Send Form</button>
+        </form>
     </div>
 </body>
 </html>
@@ -18,12 +23,16 @@
     new Vue({
         el: "#app", 
         data: {
-            
+            textLink: "Click here", 
+            urlLink: "http://www.google.com"
         },  
+
+        methods:{
             sayHello( event ){
               //  event.preventDefault();
                 alert("Hi there");
             }
+        }
        
     });
 </script>
