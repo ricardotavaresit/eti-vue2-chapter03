@@ -6,6 +6,7 @@ Chapter 03 - Events Vue JS
 - Class 02: Events with parameters in Vue JS
 - Class 03: keyboard events in Vue JS
 - Class 04: Modifier keys events in Vue JS
+- Class 05: System modifier keys in Vue JS
 
 ## Technologies used
 
